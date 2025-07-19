@@ -17,9 +17,8 @@ gui-apps/swayaudioidleinhibit **
 ```/etc/portage/package.unmask/swayaudioidleinhibit:
 gui-apps/swayaudioidleinhibit::local-portage-overlay
 ```
-Then install with:
-```emerge gui-apps/swayaudioidleinhibit
-```
+Finally, install with emerge: 
+```emerge -av --usepkg=n gui-apps/swayaudioidleinhibit```
 
 Arch:
 The package is available on the [AUR](https://aur.archlinux.org/packages/sway-audio-idle-inhibit-git/)
