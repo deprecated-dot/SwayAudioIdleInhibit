@@ -7,6 +7,20 @@ This only works for Pulseaudio / Pipewire Pulse
 
 ## Install
 
+Gentoo:
+Create your own local overlay [Gentoo Wiki Entry](https://wiki.gentoo.org/wiki/Creating_an_ebuild_repository)
+Use the ebuild included in this repository, generate your manifest, unmask your local version and add it to your accept keywords, like so:
+
+```/etc/portage/package.accept_keywords/swayaudioidleinhibit:
+gui-apps/swayaudioidleinhibit **
+```
+```/etc/portage/package.unmask/swayaudioidleinhibit:
+gui-apps/swayaudioidleinhibit::local-portage-overlay
+```
+Then install with:
+```emerge --ask --verbose --usepkg=n gui-apps/swayaudioidleinhibit
+```
+
 Arch:
 The package is available on the [AUR](https://aur.archlinux.org/packages/sway-audio-idle-inhibit-git/)
 
