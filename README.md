@@ -18,7 +18,7 @@ gui-apps/swayaudioidleinhibit **
 gui-apps/swayaudioidleinhibit::local-portage-overlay
 ```
 Then install with:
-```emerge --ask --verbose --usepkg=n gui-apps/swayaudioidleinhibit
+```emerge gui-apps/swayaudioidleinhibit
 ```
 
 Arch:
